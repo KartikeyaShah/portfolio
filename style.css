@@ -1,0 +1,153 @@
+.gradient-background {
+    background: linear-gradient(300deg, #BBE1FA, #3282B8, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    padding: 60px 0;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.animate-h1 {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideFadeIn 1s ease-out forwards;
+}
+
+.animate-p {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideFadeIn 0.8s ease-out 0.35s forwards;
+}
+
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+/* Add to existing CSS */
+.fade-up-card {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional: Add delay for staggered animation */
+.fade-up-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.fade-up-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.fade-up-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Ensure cards don't stretch too wide */
+.card {
+    max-width: 350px;
+    /* Adjust as needed */
+}
+
+text {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+.card-body {
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+#crying-cat {
+    height: 320px;
+    width: 320px;
+}
+
+.my-auto {
+    position: relative;
+    top: 42%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0 auto;
+    font-size: large;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+.footer-svg {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
